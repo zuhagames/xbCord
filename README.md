@@ -14,6 +14,7 @@
   <img src="https://img.shields.io/badge/platform-Xbox%20360-107c10" alt="Platform: Xbox 360">
   <a href="#updating"><img src="https://img.shields.io/badge/updates-in%20app-5865f2" alt="In-app updates"></a>
   <a href="https://github.com/zuhagames/xbCord/releases"><img src="https://img.shields.io/github/downloads/zuhagames/xbCord/total?label=downloads&amp;color=93c83d" alt="Total GitHub release downloads"></a>
+  <a href="https://discord.gg/eCE87fsmaV"><img src="https://img.shields.io/badge/community-Discord-5865f2?logo=discord&amp;logoColor=white" alt="Join Zuha Games - Official Server"></a>
 </p>
 
 <p align="center">
@@ -24,7 +25,8 @@
   <a href="#install-in-three-steps">Installation</a> ·
   <a href="#what-you-can-do">Features &amp; controls</a> ·
   <a href="https://github.com/zuhagames/xbCord/releases/tag/v0.2.1">Release notes</a> ·
-  <a href="#need-a-hand">Help</a>
+  <a href="#need-a-hand">Help</a> ·
+  <a href="https://discord.gg/eCE87fsmaV">Discord support</a>
 </p>
 
 ## Download xbCord
@@ -105,6 +107,8 @@ Use `update_channel=dev` for the developer feed. Most new installations should u
 </details>
 
 ## Need a hand?
+
+Join **[Zuha Games - Official Server](https://discord.gg/eCE87fsmaV)** for xbCord support, project updates and the rest of our projects. Come ask questions, share feedback or hang out with the community.
 
 | Problem | Start here |
 | --- | --- |
