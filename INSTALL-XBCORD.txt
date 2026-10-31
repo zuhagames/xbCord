@@ -1,0 +1,28 @@
+xbCord beta 0.2.0.1 dev updater test (build 3)
+Published by ZuhaGames
+Made by zuha | zec2235
+
+INSTALLATION
+Copy Plugins and xbCord to the root of your USB. Keep your existing xbCord.ini, token.bin and state.txt when updating. Do not replace a real token with the supplied placeholder token.txt.
+Keep launch.ini pointing to Usb:\Plugins\xbCord\xbCord.xex. This file is now the loader. Copy the complete Plugins\xbCord folder, including slot-a; copying only the XEX will not install this build.
+For a first sign-in, replace ALL placeholder text in xbCord\token.txt with only your complete current Discord token on one line, or use Type the token in xbCord. Keep the USB connected.
+
+USB LAYOUT
+Plugins\xbCord\xbCord.xex
+Plugins\xbCord\xbCord.xur
+Plugins\xbCord\slot-a\xbCord-core.xex
+Plugins\xbCord\slot-a\xbCord.xur
+Plugins\xbCord\slot-a\release.manifest
+Plugins\xbCord\slot-a\release.sig
+Plugins\xbCord\slot-a\ready.marker
+xbCord\xbCord.ini
+xbCord\token.txt
+
+UPDATES
+Open Settings > Updates > Check for updates. Select Download update when one is available. Wait for 'Update downloaded and verified', then restart the console when convenient. The loader tries the new slot at the next boot. Let xbCord finish startup for at least one minute before powering off.
+The previous plugin slot remains available. If the trial does not finish startup, restarting again selects the previous version. An offline Discord account does not prevent startup confirmation. Never delete or modify slot metadata while updating.
+To check developer releases, set update_channel=dev in your existing xbCord.ini. Use update_channel=beta for the beta channel. Automatic checking never forces a download or restart.
+
+DEVELOPER TESTING
+This updater installation requires testing on a physical Xbox before public use. Test a normal upgrade, cancel/back while downloading, a network interruption, and recovery after an unconfirmed first boot. Keep your previous complete installation on your PC for manual recovery.
+If xbCord will not start, create an empty xbCord_off.txt at the USB root and restart. Remove it when ready to load xbCord again. For support, provide the build number and relevant xbCord.log or Plugins\xbCord\loader.log lines. Never share your token files.
