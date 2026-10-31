@@ -1,13 +1,13 @@
 XBCORD-UPDATE-1
 product=xbCord
-version=0.2.0.1
-build=3
-serial=1001
+version=0.2.1
+build=1
+serial=1002
 channel=dev
 min_loader=1
-core_size=221184
-core_sha256=4d8ca98767af7c29b7cec33cca2b3ec3990cc17358516c1e5c72c93dad48746d
+core_size=229376
+core_sha256=124703d9c511cea37261e14dae26187d5bb51f7e3840f73d7a74276d6a12c1fb
 skin_size=1579
 skin_sha256=867ad2fee33a1b837f8dfb50e10cf0154120f44764eef46240004b4f6dbe77c2
-base=https://raw.githubusercontent.com/zuhagames/xbCord/main/updates/builds/1001
-notes=Developer-only updater test. Install the complete loader package once, then test Settings > Updates.
+base=https://raw.githubusercontent.com/zuhagames/xbCord/main/updates/builds/1002
+notes=Search, unread filters, organized pins, message editing, privacy controls and connection diagnostics.
