@@ -1,0 +1,5 @@
+*.manifest -text
+*.sig -text
+*.marker -text
+*.xex -text
+*.xur -text
