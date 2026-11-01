@@ -1,0 +1,13 @@
+XBCORD-UPDATE-1
+product=xbCord
+version=0.3.2
+build=3
+serial=1019
+channel=beta
+min_loader=1
+core_size=262144
+core_sha256=e83d4a6e28b8fc931eedd8fda55f72198ffe10f63e1d40c75faeaf4ee8c06468
+skin_size=1579
+skin_sha256=867ad2fee33a1b837f8dfb50e10cf0154120f44764eef46240004b4f6dbe77c2
+base=https://raw.githubusercontent.com/zuhagames/xbCord/main/updates/builds/1019
+notes=Build 4 capture base with configurable screenshot combos and Press or Hold activation
