@@ -2,11 +2,11 @@
   <img src="assets/xbcord-banner.svg" width="720" alt="xbCord — Discord for Xbox 360">
 </p>
 
-<h3 align="center">Your chats. Your servers. Your Xbox 360.</h3>
+<h3 align="center">Discord on Xbox 360.</h3>
 
 <p align="center">
-  A Discord client that lives right inside the Xbox guide.<br>
-  Chat with friends, browse your servers and keep your favorites close.
+  Open Discord from the Xbox guide to read messages,<br>
+  chat with friends and browse your servers.
 </p>
 
 <p align="center">
@@ -22,31 +22,31 @@
 </p>
 
 <p align="center">
-  <a href="#install-in-three-steps">Installation</a> ·
-  <a href="#what-you-can-do">Features &amp; controls</a> ·
+  <a href="#installation">Installation</a> ·
+  <a href="#features">Features</a> ·
   <a href="https://github.com/zuhagames/xbCord/releases/tag/v0.2.1">Release notes</a> ·
-  <a href="#need-a-hand">Help</a> ·
+  <a href="#help">Help</a> ·
   <a href="https://discord.gg/eCE87fsmaV">Discord support</a>
 </p>
 
 ## Download xbCord
 
-**[Download xbCord Beta 0.2.1 (.zip)](https://github.com/zuhagames/xbCord/releases/download/v0.2.1/xbCord.beta.0.2.1.zip)** — the complete plugin, settings template and installation guide.
+**[Download Beta 0.2.1](https://github.com/zuhagames/xbCord/releases/download/v0.2.1/xbCord.beta.0.2.1.zip)** — everything you need is in the ZIP, including the installation guide.
 
-Extract the ZIP on your PC before copying it to your USB. **Use the release ZIP above**; the green Code button's “Download ZIP” contains repository files rather than the prepared installation package.
+Use this download rather than **Code → Download ZIP**. Extract it on your PC before copying the folders to your USB.
 
-> **Before installing:** you need an Xbox 360 already set up to load plugins, such as with DashLaunch. This is a beta prerelease: the SDK build and PC checks passed; physical Xbox boot, upgrade and recovery testing is still needed.
+You'll need an Xbox 360 that can already load plugins, such as through DashLaunch. xbCord is currently in beta, so keep a backup of your existing setup.
 
-## Install in three steps
+## Installation
 
-1. **Copy the folders.** Open the extracted `xbCord beta 0.2.1` folder, then copy **`Plugins`** and **`xbCord`** to the root of your USB. Copy the entire plugin folder, including `slot-a`.
-2. **Set your plugin path.** In DashLaunch, choose `Usb:\Plugins\xbCord\xbCord.xex` in a free plugin slot and save. Keep your other plugins as they are and load xbCord only once.
-3. **Restart and sign in.** Keep the USB connected, restart, open the Xbox guide and select **xbCord** under Games & Apps. Choose **Type the token**, or replace all placeholder text in `xbCord\token.txt` with your Discord token and choose **Log in from USB**.
+1. Copy **`Plugins`** and **`xbCord`** from the extracted folder to the root of your USB. Include everything inside `Plugins\xbCord`, including `slot-a`.
+2. In DashLaunch, select `Usb:\Plugins\xbCord\xbCord.xex` in a free plugin slot and save. Don't load xbCord twice.
+3. Restart with the USB connected. Open the Xbox guide, go to Games & Apps and select **xbCord**. Choose **Type the token**, or put your token in `xbCord\token.txt` and choose **Log in from USB**. Replace all the placeholder text with just your token on one line.
 
-**Already using xbCord?** Back up your installation first. Keep your existing `xbCord.ini`, `token.bin` and `state.txt`; don't overwrite your token with the template. If upgrading manually from a loader build, replace the complete `Plugins\xbCord` folder so old slot-selection files aren't carried over. The separate `xbCord` folder holds your account data and preferences.
+**Updating an existing install?** Keep your `xbCord.ini`, `token.bin` and `state.txt`. Don't replace your saved token with the placeholder. If you're copying over a version that already has the updater, back up and replace the whole `Plugins\xbCord` folder. Keep your separate `xbCord` data folder.
 
 <details>
-<summary><strong>Check the USB folder layout</strong></summary>
+<summary><strong>How the folders should look</strong></summary>
 
 ```text
 USB root/
@@ -65,60 +65,65 @@ USB root/
     └── token.txt                   ← replace the placeholder to sign in
 ```
 
-`token.bin`, `state.txt` and logs are created by xbCord as needed. Keep the USB connected while using the plugin.
+xbCord creates `token.bin`, `state.txt` and its logs when needed. Keep the USB connected while using it.
+
+`slot-a` contains the plugin itself. The XEX outside it is the loader. Updates go into the other slot so the previous version is still there if startup fails. Don't delete the slot folder or select its core XEX in DashLaunch.
 
 </details>
 
-For the full instructions, read **[INSTALL-XBCORD.txt](INSTALL-XBCORD.txt)**, also included in the download.
+The full setup guide is **[INSTALL-XBCORD.txt](INSTALL-XBCORD.txt)**. It's also in the ZIP.
 
-## What you can do
+## Features
 
-| Feature | How to use it |
+- Read and send messages in your DMs and server channels.
+- Search chats, servers and channels by name, or filter for unread messages.
+- Pin your favorite chats, servers and channels. Rename the shortcuts and put them in your own order.
+- Send quick replies like “Hi!” or “Be right back.” You can edit the phrases in Settings.
+- Edit or delete your own messages.
+- Choose what notifications show: the message, just the sender, or “New Discord message.”
+- Find out why a connection failed with the diagnostics screen.
+- Download updates from inside xbCord.
+
+### Controller shortcuts
+
+| Button | What it does |
 | --- | --- |
-| **Chats, servers & channels** | Open conversations and browse your Discord servers from the Xbox guide. |
-| **Search by name** | Click the **left stick (LS)** in the current chat, server or channel list. |
-| **Unread filter** | Press **BACK** to show unread conversations. **B** clears active filters. |
-| **Pinned favorites** | Press **START** to pin a chat, server or channel. In **Pinned**, click **LS** to rename or move it up/down. |
-| **Quick messages** | Press **X** in an open chat to choose a phrase. Customize them under **Settings → Quick messages**. |
-| **Edit & delete** | Select one of your messages and press **A**. Deleting asks for confirmation. |
-| **Notification privacy** | Under **Settings → Notification privacy**, choose message previews, sender only or “New Discord message.” |
-| **Connection diagnostics** | Check network, authentication and verification results from **Settings** or the sign-in screen. |
-| **In-app updates** | Open **Settings → Updates** to check and download from GitHub. |
+| **LS click** | Search the current list. In Pinned, rename or move a shortcut. |
+| **BACK** | Toggle unread-only. Press **B** to clear filters. |
+| **START** | Pin or unpin the selected chat, server or channel. |
+| **X** in a chat | Choose a quick message. |
+| **A** on your message | Open its options, including edit and delete. |
 
 ## Updating
 
-Once the complete loader package is installed:
+Once you've installed the complete package, you can get future updates from xbCord:
 
 1. Open **Settings → Updates → Check for updates**.
 2. Choose **Download update** and wait for **“Update downloaded and verified.”**
-3. Restart when convenient. Allow at least **one minute** for startup confirmation.
+3. Restart when you're ready, then leave xbCord running for at least **one minute**.
 
-Downloads are checked against signed update metadata and file hashes. The previous plugin slot stays available: if a trial startup isn't confirmed, restarting again selects the previous slot. Updates preserve your account data and settings, and never force a restart.
+Your account data and settings stay in place. The previous plugin slot is kept as a fallback if the new version doesn't finish starting. xbCord won't restart the console for you.
 
-The normal release channel is `update_channel=beta` in `xbCord/xbCord.ini`.
+Leave `update_channel=beta` in `xbCord/xbCord.ini` for normal beta releases.
 
 <details>
 <summary><strong>Developer updater test — 0.2.0.1</strong></summary>
 
-[Download the 0.2.0.1 developer updater test](https://github.com/zuhagames/xbCord/releases/tag/v0.2.0.1-dev.1) if you specifically want to test upgrading from that build. Install its complete package once, then use **Settings → Updates** to discover 0.2.1 through the developer feed.
+[0.2.0.1 updater test](https://github.com/zuhagames/xbCord/releases/tag/v0.2.0.1-dev.1) is for trying the upgrade to 0.2.1. Install its complete package, leave `update_channel=dev` in the INI, then open **Settings → Updates**.
 
-Use `update_channel=dev` for the developer feed. Most new installations should use the 0.2.1 download at the top of this page.
+If you just want to use xbCord, grab 0.2.1 at the top of this page.
 
 </details>
 
-## Need a hand?
+## Help
 
-Join **[Zuha Games - Official Server](https://discord.gg/eCE87fsmaV)** for xbCord support, project updates and the rest of our projects. Come ask questions, share feedback or hang out with the community.
+Need help, found a bug or have a suggestion? Join **[Zuha Games - Official Server](https://discord.gg/eCE87fsmaV)**. That's where you'll find xbCord support and updates on our other projects too.
 
-| Problem | Start here |
-| --- | --- |
-| **xbCord doesn't appear** | Check the saved plugin path, keep the USB connected and confirm your plugin loader is running. Copy the complete plugin folder. |
-| **It can't connect** | Open **Connection diagnostics** to see whether DNS, TCP, TLS, authentication or account verification failed. |
-| **The token isn't accepted** | Replace the entire placeholder in `token.txt` with your complete current token on one line. Your Discord account password is different from a token. |
-| **Discord asks for verification** | Complete the checks in the official Discord app, then choose **Retry sign-in** in xbCord's Account help. |
-| **You need to disable it** | Create an empty `xbCord_off.txt` at the USB root and restart. Remove it when ready to enable xbCord again. |
+- **Can't connect?** Open Connection diagnostics from Settings or the sign-in screen. It can tell you whether the problem is DNS, the connection, authentication or verification.
+- **Discord asks for verification?** Complete it in the official Discord app, then use Retry sign-in in xbCord's Account help.
+- **Need to disable xbCord?** Put an empty `xbCord_off.txt` at the USB root and restart. Remove it to enable xbCord again.
 
-See the **[installation guide](INSTALL-XBCORD.txt)** for recovery instructions. If you share logs for support, **never include token files or your token**.
+If you're sharing logs for support, don't include your token or token files. More setup and recovery help is in the [installation guide](INSTALL-XBCORD.txt).
 
 ---
 
