@@ -1,0 +1,13 @@
+XBCORD-UPDATE-1
+product=xbCord
+version=0.3.1
+build=1
+serial=1007
+channel=beta
+min_loader=1
+core_size=262144
+core_sha256=459b7d343d051a482d055d296b6703a51556e057018696c8d6ddac539c582aae
+skin_size=1579
+skin_sha256=867ad2fee33a1b837f8dfb50e10cf0154120f44764eef46240004b4f6dbe77c2
+base=https://raw.githubusercontent.com/zuhagames/xbCord/main/updates/builds/1007
+notes=Image button, screenshot capture controls and readable control hints.
