@@ -1,4 +1,4 @@
-xbCord beta 0.2.3 (build 1)
+xbCord beta 0.3.0 (build 1)
 Published by ZuhaGames
 Made by zuha | zec2235
 
@@ -7,6 +7,7 @@ Copy Plugins and xbCord to the root of your USB. Keep your existing xbCord.ini, 
 The plugin is Plugins\xbCord\xbCord.xex. Keep launch.ini pointing to Usb:\Plugins\xbCord\xbCord.xex. There is no separate loader or skin to install.
 If upgrading manually, back up the old plugin and replace xbCord.xex with the one from this package. Preserve the separate xbCord data folder.
 For a first sign-in, replace ALL placeholder text in xbCord\token.txt with only your complete current Discord token on one line, or use Type the token in xbCord. Keep the USB connected.
+If Activity Feed is hidden on your dashboard, xbCord uses the visible Avatar Awards (Brindes) entry in Games & Apps instead. Click the right stick while the guide is open as another way to open xbCord. Set entry_fallback=0 in xbCord.ini if you prefer to keep Avatar Awards unchanged.
 
 USB LAYOUT
 Plugins\xbCord\xbCord.xex
@@ -19,8 +20,14 @@ The updater verifies the download before replacing the installed file. It keeps 
 To check developer releases, set update_channel=dev in your existing xbCord.ini. Use update_channel=beta for the beta channel. Automatic checking never forces a download or restart.
 
 UPGRADING FROM THE 0.2.0.1 DEVELOPER TEST
-Use the test build's Settings > Updates to download 0.2.3 and restart. Let xbCord run for at least one minute; it will prepare the standalone plugin and ask for one more restart. After restarting again and finishing startup, the old managed slot folders are removed.
-Keep the test build's slot-a folder until that upgrade has completed. If you deleted it already, install this 0.2.3 XEX manually instead.
+Use the test build's Settings > Updates to download 0.3.0 and restart. Let xbCord run for at least one minute; it will prepare the standalone plugin and ask for one more restart. After restarting again and finishing startup, the old managed slot folders are removed.
+Keep the test build's slot-a folder until that upgrade has completed. If you deleted it already, install this 0.3.0 XEX manually instead.
+
+SCREENSHOTS
+Hold START + BACK together for about half a second outside xbCord to take a screenshot. Wait for the Screenshot saved notification. PNG files are saved automatically in xbCord\Screenshots, with small previews in its .thumbs subfolder. Capturing saves locally; it never posts to Discord automatically.
+To send one, open a chat, click LS, choose Send screenshot, select a filename, then confirm Send screenshot. Cancel is selected first. Only PNG files directly in xbCord\Screenshots are listed (up to 40, newest timestamped filenames first). The file stays on your storage after sending.
+Screenshots are saved at up to 1280x720 and uploads are limited to 4 MB. A temporary frame buffer is used during capture and released after saving; the gallery keeps only filenames and small previews in memory. A capture may fail if the display changes, storage is full, or memory is unavailable. Failed or unconfirmed uploads are never resent automatically; check the chat before trying again.
+If Aurora/Nova uses the same shortcut, disable that shortcut there or set screenshot_combo=back_rs in your existing xbCord.ini to use BACK + click right stick instead. Restart after changing it. Set screenshots=0 to disable capture. These button presses still reach the game. Capture is disabled while an xbCord page or its keyboard is open and during title transitions.
 
 CONTROLS
 In chats, servers or channels, click the left stick (LS) for Search and filter. Search matches names in the current list. Press BACK to toggle unread-only; B clears active filters before leaving the list.
