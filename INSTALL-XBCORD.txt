@@ -1,10 +1,10 @@
-xbCord beta 0.2.2 (build 1)
+xbCord beta 0.2.3 (build 1)
 Published by ZuhaGames
 Made by zuha | zec2235
 
 INSTALLATION
 Copy Plugins and xbCord to the root of your USB. Keep your existing xbCord.ini, token.bin and state.txt when updating. Do not replace a real token with the supplied placeholder token.txt.
-The plugin is one file again: Plugins\xbCord\xbCord.xex. Keep launch.ini pointing to Usb:\Plugins\xbCord\xbCord.xex. There is no separate loader or skin to install.
+The plugin is Plugins\xbCord\xbCord.xex. Keep launch.ini pointing to Usb:\Plugins\xbCord\xbCord.xex. There is no separate loader or skin to install.
 If upgrading manually, back up the old plugin and replace xbCord.xex with the one from this package. Preserve the separate xbCord data folder.
 For a first sign-in, replace ALL placeholder text in xbCord\token.txt with only your complete current Discord token on one line, or use Type the token in xbCord. Keep the USB connected.
 
@@ -19,8 +19,8 @@ The updater verifies the download before replacing the installed file. It keeps 
 To check developer releases, set update_channel=dev in your existing xbCord.ini. Use update_channel=beta for the beta channel. Automatic checking never forces a download or restart.
 
 UPGRADING FROM THE 0.2.0.1 DEVELOPER TEST
-Use the test build's Settings > Updates to download 0.2.2 and restart. Let xbCord run for at least one minute; it will prepare the standalone plugin and ask for one more restart. After restarting again and finishing startup, the old managed slot folders are removed.
-Keep the test build's slot-a folder until that upgrade has completed. If you deleted it already, install this 0.2.2 XEX manually instead.
+Use the test build's Settings > Updates to download 0.2.3 and restart. Let xbCord run for at least one minute; it will prepare the standalone plugin and ask for one more restart. After restarting again and finishing startup, the old managed slot folders are removed.
+Keep the test build's slot-a folder until that upgrade has completed. If you deleted it already, install this 0.2.3 XEX manually instead.
 
 CONTROLS
 In chats, servers or channels, click the left stick (LS) for Search and filter. Search matches names in the current list. Press BACK to toggle unread-only; B clears active filters before leaving the list.
@@ -32,5 +32,6 @@ Press BACK in a chat to jump to unread messages; Y returns to the newest message
 
 HELP AND RECOVERY
 For support, join Zuha Games - Official Server: https://discord.gg/eCE87fsmaV
+To support xbCord and future ZuhaGames projects, visit https://ko-fi.com/zuhagames on your phone or PC. Donations are optional. The same link is in Settings > Support ZuhaGames.
 If xbCord will not start, create an empty xbCord_off.txt at the USB root and restart. To restore the previous plugin, copy xbCord\xbCord.previous.bin to Plugins\xbCord\xbCord.xex while the console is off. Remove the off file when ready to use xbCord again. This single-file layout does not automatically roll back a plugin that cannot start.
 Keep a copy of your previous installation on your PC. Never share your token files.

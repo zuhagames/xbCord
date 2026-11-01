@@ -1,0 +1,13 @@
+XBCORD-UPDATE-1
+product=xbCord
+version=0.2.3
+build=1
+serial=1005
+channel=beta
+min_loader=1
+core_size=241664
+core_sha256=4517dfba0d054349efdd2987150e664ef8e14883f9dbff68b9743fbbbd0ab47e
+skin_size=1579
+skin_sha256=867ad2fee33a1b837f8dfb50e10cf0154120f44764eef46240004b4f6dbe77c2
+base=https://raw.githubusercontent.com/zuhagames/xbCord/main/updates/builds/1005
+notes=Homebrew presence, group-chat pictures, update prompt fixes and optional Ko-fi support.

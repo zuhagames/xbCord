@@ -15,6 +15,7 @@
   <a href="#updating"><img src="https://img.shields.io/badge/updates-in%20app-5865f2" alt="In-app updates"></a>
   <a href="https://github.com/zuhagames/xbCord/releases"><img src="https://img.shields.io/github/downloads/zuhagames/xbCord/total?label=downloads&amp;color=93c83d" alt="Total GitHub release downloads"></a>
   <a href="https://discord.gg/eCE87fsmaV"><img src="https://img.shields.io/badge/community-Discord-5865f2?logo=discord&amp;logoColor=white" alt="Join Zuha Games - Official Server"></a>
+  <a href="https://ko-fi.com/zuhagames"><img src="https://img.shields.io/badge/Support-Ko--fi-ff5e5b?logo=kofi&amp;logoColor=white" alt="Support ZuhaGames on Ko-fi"></a>
 </p>
 
 <p align="center">
@@ -70,6 +71,10 @@ When updating manually, keep your existing `xbCord.ini`, `token.bin` and `state.
 Need help, found a bug or have a suggestion? Join **[Zuha Games - Official Server](https://discord.gg/eCE87fsmaV)**. That's where you'll find xbCord support and updates on our other projects too.
 
 If you're having connection trouble, start with **Connection diagnostics** in xbCord. If you're sharing logs for support, don't include your token or token files.
+
+## Support development
+
+Enjoying xbCord? You can **[support ZuhaGames on Ko-fi](https://ko-fi.com/zuhagames)** to help with xbCord and future projects. Donations are optional — thanks for using it and sharing your feedback.
 
 ---
 
