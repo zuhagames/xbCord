@@ -1,13 +1,13 @@
 XBCORD-UPDATE-1
 product=xbCord
-version=0.3.0
+version=0.2.3
 build=1
-serial=1006
+serial=1005
 channel=beta
 min_loader=1
-core_size=258048
-core_sha256=7e1d015030fff4a5c92faa760e111567e5c78f3432e8ea2d2de83c6f8065b473
+core_size=241664
+core_sha256=4517dfba0d054349efdd2987150e664ef8e14883f9dbff68b9743fbbbd0ab47e
 skin_size=1579
 skin_sha256=867ad2fee33a1b837f8dfb50e10cf0154120f44764eef46240004b4f6dbe77c2
-base=https://raw.githubusercontent.com/zuhagames/xbCord/main/updates/builds/1006
-notes=Take and send screenshots from the guide, group-chat icon refresh and missing guide entry fixes.
+base=https://raw.githubusercontent.com/zuhagames/xbCord/main/updates/builds/1005
+notes=Homebrew presence, group-chat pictures, update prompt fixes and optional Ko-fi support.
