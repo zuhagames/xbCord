@@ -1,0 +1,13 @@
+XBCORD-UPDATE-1
+product=xbCord
+version=0.2.1
+build=2
+serial=1003
+channel=beta
+min_loader=1
+core_size=233472
+core_sha256=5e9684644ea3ecc08734e69d438598095c08a44fca971911a3f3f976d2782e76
+skin_size=1579
+skin_sha256=867ad2fee33a1b837f8dfb50e10cf0154120f44764eef46240004b4f6dbe77c2
+base=https://raw.githubusercontent.com/zuhagames/xbCord/main/updates/builds/1003
+notes=The single xbCord.xex is back. Compatible with the 0.2.0.1 developer updater.

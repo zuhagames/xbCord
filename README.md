@@ -33,17 +33,19 @@
 
 **[Download Beta 0.2.1](https://github.com/zuhagames/xbCord/releases/download/v0.2.1/xbCord.beta.0.2.1.zip)** — everything you need is in the ZIP, including the installation guide.
 
+The plugin is a single **`xbCord.xex`** again. The 0.2.1 name stays the same, and the 0.2.0.1 test updater can install this version.
+
 Use this download rather than **Code → Download ZIP**. Extract it on your PC before copying the folders to your USB.
 
 You'll need an Xbox 360 that can already load plugins, such as through DashLaunch. xbCord is currently in beta, so keep a backup of your existing setup.
 
 ## Installation
 
-1. Copy **`Plugins`** and **`xbCord`** from the extracted folder to the root of your USB. Include everything inside `Plugins\xbCord`, including `slot-a`.
+1. Copy **`Plugins`** and **`xbCord`** from the extracted folder to the root of your USB. The plugin goes at `Plugins\xbCord\xbCord.xex`.
 2. In DashLaunch, select `Usb:\Plugins\xbCord\xbCord.xex` in a free plugin slot and save. Don't load xbCord twice.
 3. Restart with the USB connected. Open the Xbox guide, go to Games & Apps and select **xbCord**. Choose **Type the token**, or put your token in `xbCord\token.txt` and choose **Log in from USB**. Replace all the placeholder text with just your token on one line.
 
-**Updating an existing install?** Keep your `xbCord.ini`, `token.bin` and `state.txt`. Don't replace your saved token with the placeholder. If you're copying over a version that already has the updater, back up and replace the whole `Plugins\xbCord` folder. Keep your separate `xbCord` data folder.
+**Updating an existing install?** Back up your old XEX, then replace it with the new `xbCord.xex`. Keep your `xbCord.ini`, `token.bin` and `state.txt`. Don't replace your saved token with the placeholder.
 
 <details>
 <summary><strong>How the folders should look</strong></summary>
@@ -52,14 +54,7 @@ You'll need an Xbox 360 that can already load plugins, such as through DashLaunc
 USB root/
 ├── Plugins/
 │   └── xbCord/
-│       ├── xbCord.xex              ← choose this in DashLaunch
-│       ├── xbCord.xur
-│       └── slot-a/                 ← keep all files inside
-│           ├── xbCord-core.xex
-│           ├── xbCord.xur
-│           ├── release.manifest
-│           ├── release.sig
-│           └── ready.marker
+│       └── xbCord.xex              ← the plugin; choose this in DashLaunch
 └── xbCord/
     ├── xbCord.ini
     └── token.txt                   ← replace the placeholder to sign in
@@ -67,7 +62,7 @@ USB root/
 
 xbCord creates `token.bin`, `state.txt` and its logs when needed. Keep the USB connected while using it.
 
-`slot-a` contains the plugin itself. The XEX outside it is the loader. Updates go into the other slot so the previous version is still there if startup fails. Don't delete the slot folder or select its core XEX in DashLaunch.
+There's no separate loader or skin to install with this 0.2.1 package.
 
 </details>
 
@@ -100,16 +95,20 @@ Once you've installed the complete package, you can get future updates from xbCo
 
 1. Open **Settings → Updates → Check for updates**.
 2. Choose **Download update** and wait for **“Update downloaded and verified.”**
-3. Restart when you're ready, then leave xbCord running for at least **one minute**.
+3. Once xbCord says the file has been updated, restart when you're ready.
 
-Your account data and settings stay in place. The previous plugin slot is kept as a fallback if the new version doesn't finish starting. xbCord won't restart the console for you.
+Your account data and settings stay in place. The updater verifies the download, then replaces `xbCord.xex`. A recovery copy is kept as `xbCord.previous.bin` in your data folder. If you need it, copy that file back as `Plugins\xbCord\xbCord.xex` while the console is off. Recovery is manual in this single-file layout. xbCord won't restart the console for you.
 
 Leave `update_channel=beta` in `xbCord/xbCord.ini` for normal beta releases.
 
 <details>
-<summary><strong>Developer updater test — 0.2.0.1</strong></summary>
+<summary><strong>Already using the 0.2.0.1 updater test?</strong></summary>
 
-[0.2.0.1 updater test](https://github.com/zuhagames/xbCord/releases/tag/v0.2.0.1-dev.1) is for trying the upgrade to 0.2.1. Install its complete package, leave `update_channel=dev` in the INI, then open **Settings → Updates**.
+The test download has been retired. If you already installed it, leave `update_channel=dev` in the INI and open **Settings → Updates** to get 0.2.1. Its update feed still works.
+
+After downloading 0.2.1, restart and let it run for one minute. It will prepare the single-file plugin and ask for one more restart. Once it starts from the standalone XEX, it removes the old managed slot folders.
+
+Keep the test build's `slot-a` until the upgrade is finished. If you already deleted it and xbCord won't start, install the new 0.2.1 XEX manually instead.
 
 If you just want to use xbCord, grab 0.2.1 at the top of this page.
 
