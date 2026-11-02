@@ -1,4 +1,4 @@
-xbCord beta 0.3.2 (build 3)
+xbCord beta 0.3.1 (build 4)
 Published by ZuhaGames
 Made by zuha | zec2235
 
@@ -20,18 +20,15 @@ The updater verifies the download before replacing the installed file. It keeps 
 To check developer releases, set update_channel=dev in your existing xbCord.ini. Use update_channel=beta for the beta channel. Automatic checking never forces a download or restart.
 
 UPGRADING FROM THE 0.2.0.1 DEVELOPER TEST
-Use the test build's Settings > Updates to download 0.3.2 and restart. Let xbCord run for at least one minute; it will prepare the standalone plugin and ask for one more restart. After restarting again and finishing startup, the old managed slot folders are removed.
-Keep the test build's slot-a folder until that upgrade has completed. If you deleted it already, install this 0.3.2 XEX manually instead.
+Use the test build's Settings > Updates to download 0.3.1 and restart. Let xbCord run for at least one minute; it will prepare the standalone plugin and ask for one more restart. After restarting again and finishing startup, the old managed slot folders are removed.
+Keep the test build's slot-a folder until that upgrade has completed. If you deleted it already, install this 0.3.1 XEX manually instead.
 
 SCREENSHOTS
-By default, hold BACK + click right stick together for about half a second to take a screenshot. In Settings > Screenshots, choose a Button combo and switch Activation between Hold and Press. Press mode captures once when both buttons are pressed together, with no hold delay. Changes save locally and apply immediately; release the buttons after changing settings. Reset to default restores BACK + click right stick with Hold. It works with xbCord open too; close the guide first for a gameplay picture. Wait for the Screenshot saved notification. PNG files are saved automatically in xbCord\Screenshots, with small previews in its .thumbs subfolder. Capturing saves locally; it never posts to Discord automatically.
+Hold BACK + click right stick together for about half a second to take a screenshot. It works with xbCord open too; close the guide first for a gameplay picture. Wait for the Screenshot saved notification. PNG files are saved automatically in xbCord\Screenshots, with small previews in its .thumbs subfolder. Capturing saves locally; it never posts to Discord automatically.
 To send one, open a chat, press right from Write a message to select the image button, then press A. Browse three previews at a time: left/right chooses a photo, LT/RT changes pages and Y refreshes. Press A to choose, then confirm Send photo. Cancel is selected first. You can also click LS and choose Send photo. Only PNG files directly in xbCord\Screenshots are listed (up to 40, newest timestamped filenames first). The file stays on your storage after sending.
-The image button only browses photos; capture uses your configured shortcut. The browser refreshes after a screenshot is saved. Captured screenshots have previews automatically; small manually added PNGs can also preview directly. If capture fails, check the failure notification and the screenshots lines in xbCord.log.
+The image button only browses photos; capture uses BACK + click right stick. The browser refreshes after a screenshot is saved. Captured screenshots have previews automatically; small manually added PNGs can also preview directly. If capture fails, check the failure notification and the screenshots lines in xbCord.log.
 Screenshots are saved at up to 1280x720 and uploads are limited to 4 MB. A temporary frame buffer is used during capture and released after saving; the gallery keeps only filenames and small previews in memory. A capture may fail if the display changes, storage is full, or memory is unavailable. Failed or unconfirmed uploads are never resent automatically; check the chat before trying again.
-The default shortcut is BACK + click right stick (Hold). For an INI default, use screenshot_buttons=back+rs and screenshot_activation=hold or press; choices made in Settings > Screenshots override these. Supported button names: back, start, lb, rb, ls, rs, a, b, x, y, up, down, left, right. Two different buttons are required; opposite D-pad directions are excluded. Older screenshot_combo settings keep the safe default unless you choose a new combination in settings. If another plugin uses the same shortcut, disable that shortcut there. Set screenshots=0 to disable capture. These button presses still reach the game. Capture is disabled while an xbCord keyboard is open and during title transitions. Release the shortcut before taking another picture; captures have a three-second cooldown.
-
-SETTINGS
-The main Settings page fits on one screen. Screenshots is the second item, below Design. Account contains automatic sign-in, account help and Log out. Connection contains Reconnect and Connection diagnostics. Profile changes and rich presence stay on the Profile tab.
+The screenshot shortcut is BACK + click right stick. Older screenshot_combo=start_back settings are automatically treated as back_rs, so START no longer triggers capture. If another plugin uses the same shortcut, disable that shortcut there. Set screenshots=0 to disable capture. These button presses still reach the game. Capture is disabled while an xbCord keyboard is open and during title transitions.
 
 CONTROLS
 In chats, servers or channels, click the left stick (LS) for Search and filter. Search matches names in the current list. Press BACK to toggle unread-only; B clears active filters before leaving the list.
@@ -39,7 +36,7 @@ Press START on a chat, server or channel to pin it. In Pinned, click LS to renam
 The footer cycles through complete control hints every few seconds. In a chat, press right from Write a message for the image button; left returns to writing. Press left again to return to the conversation list.
 In an open chat, select one of your messages and press A for Edit message or Delete message. Deletion asks for confirmation. Other people's messages do not offer these actions.
 Startup shows one notification after the guide is ready and Discord is connected.
-Open Settings > Notification privacy to choose sender and preview, sender only, or New Discord message. Open Settings > Connection > Connection diagnostics or use Connection diagnostics on the sign-in screen to inspect network, authentication and verification results.
+Open Settings > Notification privacy to choose sender and preview, sender only, or New Discord message. Open Connection diagnostics from Settings or the sign-in screen to inspect network, authentication and verification results.
 In an open chat, click LS for chat options, including manual retry/discard of a failed message. Sending, sent, failed or unconfirmed delivery appears beside the message button. Retry asks for confirmation. Failed text is kept only briefly in a bounded memory buffer; drafts are not saved.
 Press BACK in a chat to jump to unread messages; Y returns to the newest messages. The unread position must be available from Discord. Open Settings > Connection to see the live connection state or request a reconnect. Reconnect does not clear account verification requirements.
 
