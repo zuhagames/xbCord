@@ -1,13 +1,13 @@
 XBCORD-UPDATE-1
 product=xbCord
-version=0.3.1
+version=0.4.0
 build=4
-serial=1011
+serial=1025
 channel=dev
 min_loader=1
-core_size=262144
-core_sha256=4e3ebd4d248a1ffd0a43c3b5e8bbfb724018c1d5f4ee32f5b089a0602aa7723c
+core_size=278528
+core_sha256=eb4e36713fbd980450996f54ea8f4b08711a052d687ce98bc149cf25a34153be
 skin_size=1579
 skin_sha256=867ad2fee33a1b837f8dfb50e10cf0154120f44764eef46240004b4f6dbe77c2
-base=https://raw.githubusercontent.com/zuhagames/xbCord/main/updates/builds/1011
-notes=Three photo previews, screenshot capture fixes and one startup notification.
+base=https://raw.githubusercontent.com/zuhagames/xbCord/main/updates/builds/1025
+notes=Discontinued. Final update by ZuhaGames. AI was used to help develop xbCord.
