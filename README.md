@@ -1,7 +1,4 @@
 **DISCONTINUED**
-
-Zuha is no longer associated with this project. **xbCord 0.4.0 was the final update made by ZuhaGames.**
-
 **AI disclosure:** AI was used to help develop xbCord.
 
 ---
